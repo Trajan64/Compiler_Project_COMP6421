@@ -1,1 +1,1 @@
-*.m linguist-vendored
+test/* linguist-vendored
