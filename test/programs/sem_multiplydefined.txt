@@ -1,0 +1,63 @@
+class myClass_1 {
+
+	int c;
+
+	int a(int x, int y) {
+		
+		// Conflict with parameter.
+		int x;
+		
+		// Multiply defined local variables.
+		float b;
+		float b;
+		
+		// c is already defined as an attribute, but defining in a local scope will bear no conflicts.
+		int c;
+		
+		
+	};
+	
+	// One definition of function y() is inside this class, the other one is a free function.
+	// As they are part of different scopes we should not have a conflict here.
+	int y() { };
+	
+	// No conflict. We already have another member with the name c but it is of a different type.
+	int c() { };
+	
+	// Conflicts here.
+	int e(int a) { };
+	int e(float c) { };	
+	 
+
+};
+
+class myClass_1 {
+
+	// Conflict here.
+	float a() { };
+	int a() { };
+
+};
+
+// Conflict: 2 classes definitions with the same name.
+class myClass_1 {
+	int c;
+
+
+};
+
+program {
+
+	// Conflict here.
+	int a;
+	int a;
+
+};
+
+
+int free_func1() { };
+
+// Conflict here.
+int free_func2() { };
+int free_func2() { };
+int y() { };

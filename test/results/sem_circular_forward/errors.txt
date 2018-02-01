@@ -1,0 +1,2 @@
+Semantic error: (7,9) Identifier undefinedVar not found.
+Semantic error: (46,13) Function undefinedFunc not found.

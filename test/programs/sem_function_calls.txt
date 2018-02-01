@@ -1,0 +1,60 @@
+class B {
+
+	int f() {
+	
+		return(3.4);
+		
+	};
+	
+};
+
+
+program {
+
+	int a;
+	B b;
+	int c[2][4];
+	B d[2][3];
+	// Error not enough arguments.
+	a = free_func2();
+	a = free_func(3.5);
+	
+	// Error too many arguments.
+	a = free_func(1, 2, 3, 4);
+	
+	// Error argument types invalid.
+	a = free_func(a, b, 3);
+	a = free_func(b, a, 3.4);
+	
+	// Valid.
+	a = free_func(a, b, 3.4);
+	
+	// Valid.
+	a = b.f();
+	
+	// Error
+	a = b.f(4);
+	
+	// Error. Arrays passed as arguments.
+	a = free_func(c[2], b, 2.4);
+	a = free_func(a, d[2], 3.4);
+
+	// Valid.
+	a = free_func(a, d[1][1], 3.4);
+
+};
+
+
+B free_func2() {
+	
+	// Error; should return instance of B.
+	return(4);
+	
+};
+
+
+int free_func(int a, B b, float c) {
+	
+	return(0);
+	
+};

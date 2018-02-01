@@ -1,0 +1,33 @@
+================================ global ================================
+A                   class                                                                 LINK: A             HAS SIZE: false     SIZE: 0             
+program             function            null : (no args)                                  LINK: program       HAS SIZE: false     SIZE: 0             ADDR: 0             
+func                function            int : (no args)                                   LINK: func          HAS SIZE: false     SIZE: 0             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ A ================================
+b                   variable            int                                                                   HAS SIZE: false     SIZE: 0             ADDR: 0             
+meth                function            int : (no args)                                   LINK: A:meth        HAS SIZE: false     SIZE: 0             ADDR: 0             
+meth3               function            int : (no args)                                   LINK: A:meth3       HAS SIZE: false     SIZE: 0             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ A:meth ================================
+------------------------------------------------------------------
+
+
+================================ A:meth3 ================================
+------------------------------------------------------------------
+
+
+================================ program ================================
+a                   variable            A                                                                     HAS SIZE: false     SIZE: 0             ADDR: 0             
+b                   variable            int                                                                   HAS SIZE: false     SIZE: 0             ADDR: 0             
+c                   variable            B                                                                     HAS SIZE: false     SIZE: 0             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ func ================================
+------------------------------------------------------------------
+
+

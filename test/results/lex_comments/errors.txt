@@ -1,0 +1,2 @@
+Syntax error: (3,4) expected ['class', 'program'] got id instead.
+Lexical error: (5,1) unclosed multi-line comment.

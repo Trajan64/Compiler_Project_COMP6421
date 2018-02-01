@@ -1,0 +1,17 @@
+================================ global ================================
+program             function            null : (no args)                                  LINK: program       HAS SIZE: false     SIZE: 0             ADDR: 0             
+fun                 function            undefinedClass : (no args)                        LINK: fun           HAS SIZE: false     SIZE: 0             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ program ================================
+a                   variable            int                                                                   HAS SIZE: false     SIZE: 0             ADDR: 0             
+b                   variable            float                                                                 HAS SIZE: false     SIZE: 0             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ fun ================================
+a                   variable            undefinedClass                                                        HAS SIZE: false     SIZE: 0             ADDR: 0             
+------------------------------------------------------------------
+
+

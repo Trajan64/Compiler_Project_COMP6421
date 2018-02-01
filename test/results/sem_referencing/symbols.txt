@@ -1,0 +1,57 @@
+================================ global ================================
+myClass_1           class                                                                 LINK: myClass_1     HAS SIZE: true      SIZE: 4             
+myClass_2           class                                                                 LINK: myClass_2     HAS SIZE: true      SIZE: 72            
+myClass_3           class                                                                 LINK: myClass_3     HAS SIZE: true      SIZE: 68            
+myClass_4           class                                                                 LINK: myClass_4     HAS SIZE: true      SIZE: 4             
+program             function            null : (no args)                                  LINK: program       HAS SIZE: true      SIZE: 0             ADDR: 0             
+func_1              function            int : (no args)                                   LINK: func_1        HAS SIZE: true      SIZE: 0             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ myClass_1 ================================
+a                   variable            float                                                                 HAS SIZE: true      SIZE: 4             ADDR: 0             
+a                   function            int : int,int                                     LINK: myClass_1:a   HAS SIZE: true      SIZE: 228           ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ myClass_1:a ================================
+x                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+y                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+b                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 8             
+c                   variable            myClass_2[2]                                                          HAS SIZE: true      SIZE: 144           ADDR: 12            
+d                   variable            myClass_2                                                             HAS SIZE: true      SIZE: 72            ADDR: 156           
+------------------------------------------------------------------
+
+
+================================ myClass_2 ================================
+g                   variable            myClass_3                                                             HAS SIZE: true      SIZE: 68            ADDR: 0             
+abc                 variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 68            
+------------------------------------------------------------------
+
+
+================================ myClass_3 ================================
+h                   variable            myClass_4                                                             HAS SIZE: true      SIZE: 4             ADDR: 0             
+m                   variable            myClass_4[3][5]                                                       HAS SIZE: true      SIZE: 60            ADDR: 4             
+abc                 variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 64            
+------------------------------------------------------------------
+
+
+================================ myClass_4 ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+f                   function            float : int                                       LINK: myClass_4:f   HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ myClass_4:f ================================
+a                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ program ================================
+------------------------------------------------------------------
+
+
+================================ func_1 ================================
+------------------------------------------------------------------
+
+

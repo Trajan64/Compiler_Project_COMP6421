@@ -1,0 +1,8 @@
+<(1,1) T_KEYWORD_PROGRAM 'program'> <(1,9) T_DELIMITER_LEFT_BRACKET 'null'> 
+
+<(3,5) T_KEYWORD_INT 'int'> <(3,9) T_UNKNOWN '_' ERRONEOUS> <(3,10) T_IDENTIFIER 'a'> <(3,11) T_DELIMITER_SEMICOLON 'null'> 
+
+
+<(6,5) T_KEYWORD_INT 'int'> <(6,5) T_KEYWORD_INT 'int'> <(6,9) T_IDENTIFIER 'b'> <(6,10) T_DELIMITER_SEMICOLON 'null'> 
+
+<(8,1) T_DELIMITER_RIGHT_BRACKET 'null'> <(8,2) T_DELIMITER_SEMICOLON 'null'> <(8,3) T_EOF 'null'> <(8,3) T_EOF 'null'> 

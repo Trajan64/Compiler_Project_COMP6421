@@ -1,0 +1,63 @@
+class A {
+	
+	int a;
+	int meth1(int b) {
+		a = b;
+		return(0);
+	};
+};
+
+
+program {
+
+	int b;
+	int c;
+	A d;
+	int r;
+	
+	
+	b = 2;
+	c = 4;
+	
+	r = fun1(b, c);
+	
+	// We should get 13.
+	put(r);
+	
+	// Get a new object.
+	d = fun4();
+	
+	// This should display 99.
+	put(d.a);
+
+};
+
+int fun1(int a, int b) {
+	
+	int c;
+	c = a + b; // b=2; c=4 -> a+b=6
+	
+	return(c + fun2(a) + fun3(a)); // c + fun2(a) + fun3(a) -> 6 + 2 + 5
+
+};
+
+int fun2(int a) {
+
+	return(a);
+	
+};
+
+int fun3(int a) {
+
+	a = 5;
+	return(a);
+	
+};
+
+A fun4() {
+	
+	A a;
+	int b;
+	b = a.meth1(99); // this will set a.a to 99
+	return(a); // returns object
+};

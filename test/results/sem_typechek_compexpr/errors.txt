@@ -1,0 +1,18 @@
+Syntax error: (68,13) expected ['(', float, integer, 'not', id, '+', '-'] got '.' instead.
+Syntax error: (68,56) expected [']'] got ';' instead.
+Semantic error: (51,9) Expected ['float'] in expression, got 'int' instead.
+Semantic error: (52,93) Expected ['int'] in expression, got 'float' instead.
+Semantic error: (52,97) Function fun not found.
+Semantic error: (52,104) Expected ['int'] in expression, got 'float' instead.
+Semantic error: (52,17) Expected ['int'] in expression, got 'float' instead.
+Semantic error: (52,21) Function fun not found.
+Semantic error: (52,44) Expected ['int'] in expression, got function returning 'float' instead.
+Semantic error: (52,61) Expected ['int'] in expression, got function returning 'A' instead.
+Semantic error: (52,76) Array dimension too small. Expected 2, got 1.
+Semantic error: (53,17) Expected ['int'] in expression, got 'float' instead.
+Semantic error: (53,23) Expected ['int'] in expression, got 'A' instead.
+Semantic error: (55,9) Expected variable with type ['int'] got 'float' instead.
+Semantic error: (56,9) Expected variable with type ['int'] got 'A' instead.
+Semantic error: (61,20) Expected ['int'] in expression, got 'float' instead.
+Semantic error: (65,22) Array dimension too big. Expected 2, got 3.
+Semantic error: (68,35) Array dimension too small. Expected 1, got 0.

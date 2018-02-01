@@ -1,0 +1,96 @@
+MOON listing of ./test/results/professors_sample/code.m.
+
+    1     0  C_meth1 addi   r13, r13, -4 %  Increasing stack pointer by 4
+    2     4          addi   r13, r13, -4 %  Increasing stack pointer by 4
+    3     8          entry 
+    4     8          addi   r13, r0, topaddr
+    5    12          addi   r14, r0, topaddr
+    6    16          addi   r13, r13, -4 %  Increasing stack pointer by 4
+    7    20          addi   r13, r13, -8 %  Increasing stack pointer by 8
+    8    24          sub    r1, r1, r1
+    9    28          addi   r1, r0, -4
+   10    32          sub    r2, r2, r2
+   11    36 
+   12    36          % Allocating space for return value
+   13    36          addi   r13, r13, -8 %  Increasing stack pointer by 8
+   14    40 
+   15    40          % Backing up registers the 11 general registers + 1 stack frame pointer
+   16    40          sw     0(r13), r1 % Backing up r1
+   17    44          sw     -4(r13), r2 % Backing up r2
+   18    48          sw     -8(r13), r3 % Backing up r3
+   19    52          sw     -12(r13), r4 % Backing up r4
+   20    56          sw     -16(r13), r5 % Backing up r5
+   21    60          sw     -20(r13), r6 % Backing up r6
+   22    64          sw     -24(r13), r7 % Backing up r7
+   23    68          sw     -28(r13), r8 % Backing up r8
+   24    72          sw     -32(r13), r9 % Backing up r9
+   25    76          sw     -36(r13), r10 % Backing up r10
+   26    80          sw     -40(r13), r11 % Backing up r11
+   27    84          addi   r13, r13, -44
+   28    88          sw     0(r13), r14 % Backing up stack frame pointer
+   29    92          addi   r13, r13, -4 %  Increasing stack pointer by 4
+   30    96 
+   31    96          % Placing the stack frame pointer
+   32    96          addi   r14, r13, 0 % here
+   33   100 
+   34   100          % Stack frame pointer will now point to top of stack.
+   35   100 
+   36   100          % Load up the code return address
+   37   100          jl     r15, fun1
+   38   104          add    r2, r13, r0 % Loading up address of function's return value (function returned an object.)
+   39   108          add    r1, r1, r14
+   40   112 
+   41   112          % Copying object with size 8
+   42   112          sub    r3, r3, r3
+   43   116          lw     r3, 0(r2) % Copying.. (loading)
+   44   120          sw     0(r1), r3 % Copying..(saving)
+   45   124          lw     r3, -4(r2) % Copying.. (loading)
+   46   128          sw     -4(r1), r3 % Copying..(saving)
+   47   132          hlt   
+   48   136  fun1    addi   r13, r13, -8 %  Increasing stack pointer by 8
+   49   140          sub    r1, r1, r1
+   50   144          addi   r1, r0, 0
+   51   148          sub    r2, r2, r2
+   52   152          addi   r2, r2, 63
+   53   156          add    r1, r1, r14
+   54   160          sw     0(r1), r2
+   55   164          sub    r1, r1, r1
+   56   168          addi   r1, r0, -4
+   57   172          sub    r2, r2, r2
+   58   176          addi   r2, r2, 78
+   59   180          add    r1, r1, r14
+   60   184          sw     0(r1), r2
+   61   188          sub    r1, r1, r1
+   62   192 
+   63   192          % Calculating address for return space (stackFramePointer  + bypassing backuped registers).
+   64   192          addi   r1, r14, 56 % Setting up register holding address to return space
+   65   196          sub    r2, r2, r2
+   66   200          sub    r3, r3, r3
+   67   204          addi   r3, r0, 0
+   68   208          add    r3, r3, r14 % Calculate address to variable and set it up into a register
+   69   212          add    r2, r3, r0 % Load variable
+   70   216 
+   71   216          % Copying object with size 8
+   72   216          sub    r4, r4, r4
+   73   220          lw     r4, 0(r2) % Copying.. (loading)
+   74   224          sw     0(r1), r4 % Copying..(saving)
+   75   228          lw     r4, -4(r2) % Copying.. (loading)
+   76   232          sw     -4(r1), r4 % Copying..(saving)
+   77   236          subi   r13, r13, -4
+   78   240          add    r13, r14, r0 % Restoring stack pointer. stack point = stack frame pointer
+   79   244          lw     r14, 4(r13) % Restoring stack frame pointer
+   80   248          lw     r11, 8(r13) % Restoring general register r11
+   81   252          lw     r10, 12(r13) % Restoring general register r10
+   82   256          lw     r9, 16(r13) % Restoring general register r9
+   83   260          lw     r8, 20(r13) % Restoring general register r8
+   84   264          lw     r7, 24(r13) % Restoring general register r7
+   85   268          lw     r6, 28(r13) % Restoring general register r6
+   86   272          lw     r5, 32(r13) % Restoring general register r5
+   87   276          lw     r4, 36(r13) % Restoring general register r4
+   88   280          lw     r3, 40(r13) % Restoring general register r3
+   89   284          lw     r2, 44(r13) % Restoring general register r2
+   90   288          lw     r1, 48(r13) % Restoring general register r1
+   91   292          addi   r13, r13, 48
+   92   296          subi   r13, r13, -8
+   93   300          jr     r15
+

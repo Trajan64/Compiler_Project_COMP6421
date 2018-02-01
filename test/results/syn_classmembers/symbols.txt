@@ -1,0 +1,38 @@
+================================ global ================================
+A                   class                                                                 LINK: A             HAS SIZE: true      SIZE: 220           
+B                   class                                                                 LINK: B             HAS SIZE: true      SIZE: 24            
+C                   class                                                                 LINK: C             HAS SIZE: true      SIZE: 20            
+D                   class                                                                 LINK: D             HAS SIZE: true      SIZE: 4             
+program             function            null : (no args)                                  LINK: program       HAS SIZE: true      SIZE: 224           ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ A ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   variable            B[9]                                                                  HAS SIZE: true      SIZE: 216           ADDR: 4             
+------------------------------------------------------------------
+
+
+================================ B ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   variable            C                                                                     HAS SIZE: true      SIZE: 20            ADDR: 4             
+------------------------------------------------------------------
+
+
+================================ C ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   variable            D[2][2]                                                               HAS SIZE: true      SIZE: 16            ADDR: 4             
+------------------------------------------------------------------
+
+
+================================ D ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ program ================================
+a                   variable            A                                                                     HAS SIZE: true      SIZE: 220           ADDR: 0             
+b                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 220           
+------------------------------------------------------------------
+
+

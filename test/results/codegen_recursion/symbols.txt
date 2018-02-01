@@ -1,0 +1,17 @@
+================================ global ================================
+program             function            null : (no args)                                  LINK: program       HAS SIZE: true      SIZE: 4             ADDR: 0             
+power               function            int : int,int                                     LINK: power         HAS SIZE: true      SIZE: 8             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ program ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ power ================================
+num                 parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+n                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+------------------------------------------------------------------
+
+

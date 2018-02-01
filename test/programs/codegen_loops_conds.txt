@@ -1,0 +1,79 @@
+program {
+
+	int max;
+	int result;
+	int a;
+	max = 2;
+	result = 0;
+	
+	// Loop test
+	// Result inside 'result' should be 20.
+	
+	for (int i = 0; i < max; i = i + 1) {
+		for (int j = 0; j < max; j = j + 1) { 
+			result = result + i + j;
+		};
+		
+		for (int j = 0; j < max; j = j + 1) {
+			result = result + i + j;
+		};
+	};
+	
+	for (int i = 0; i < max; i = i + 1) {
+		for (int j = 0; j < max; j = j + 1) {
+			for (int k = 0; k < max; k = k + 1) {
+				result = result + i + j + k;
+			};
+		};
+	};
+	
+	put(result);
+	
+	result = 0;
+	
+	// 0 or 1 and 0 or 1) > (0 or 0 and 0) = 1
+	if (0 or 1 and 0 or 1 > 0 or 0 and 0) then {
+		
+		a = 2;
+		
+		if (a == 2) then {
+			// We should go through here.
+			result = result + 10;
+		} else { result = result - 1; };
+		
+		if (a > 2) then { 
+			// We won't go through here.
+			result = result - 1; } else { result = result + 10; };
+		
+		if (a >= 2) then {
+			// We should go through here.
+			result = result + 10;
+			}
+			else { result = result - 1; };
+		
+		if (a < 2) then {
+			// We won't go through here. 
+			result = result - 1;
+			}
+			else { result = result + 10; };
+			
+		if (a <= 2) then {
+			// We should go through here.
+			result = result + 10;
+			}
+			else { result = result - 1; };
+			
+		if (a <> 3) then {
+			// We should go through here
+			result = result + 10;
+		} else { result = result - 1; };
+		
+	} else;
+	
+	// Result should be 20.
+	
+	put(result);
+
+	
+			
+};

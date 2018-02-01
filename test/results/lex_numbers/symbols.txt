@@ -1,0 +1,11 @@
+================================ global ================================
+program             function            null : (no args)                                  LINK: program       HAS SIZE: true      SIZE: 8             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ program ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   variable            float                                                                 HAS SIZE: true      SIZE: 4             ADDR: 4             
+------------------------------------------------------------------
+
+

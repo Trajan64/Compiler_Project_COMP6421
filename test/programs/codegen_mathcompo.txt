@@ -1,0 +1,49 @@
+class B {
+	
+	int g;
+}; 
+
+
+class A {
+	
+	int a;
+	B b[2];
+	int meth(int i) {
+		return(b[i].g);
+	
+	};
+};
+		
+
+program {
+	
+	int r;
+	int a[2][4];
+	int m;
+	A b;
+	b.b[0].g = 40;
+	b.b[1].g = 18;
+	m = 5;
+	a[1][1] = 99;
+	
+	r = (a[1 or 0][4 - 3] * fun2(fun1()) * m + b.meth(1 and 1 or 1 or a[1][fun2(1)]) + b.b[fun1() - 2].g + m) / 100;
+	
+	// (99 * 9 * 5 + 18 + 18 + 5) / 100 = 44
+	put(r); 
+
+};
+
+
+
+int fun1() {
+	
+	return(3);
+	
+};
+
+
+int fun2(int a) {
+	
+	return(a * 3);
+	
+};

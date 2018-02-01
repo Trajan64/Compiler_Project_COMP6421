@@ -1,0 +1,7 @@
+
+
+<(3,4) T_IDENTIFIER 'foo'> <(3,4) T_IDENTIFIER 'foo'> 
+<(4,1) T_IDENTIFIER 'bar'> <(4,1) T_IDENTIFIER 'bar'> 
+
+
+<(7,45) T_EOF 'null'> <(7,45) T_EOF 'null'> 

@@ -1,0 +1,86 @@
+program {
+
+	int a;
+	int b;
+	int c;
+	int d;
+		
+	// Or truth table.
+	put(or_(0, 0));
+	put(or_(0, 1));
+	put(or_(1, 0));
+	put(or_(1, 1));
+	
+	put(9999); // Separator.
+	
+	// And truth table.
+
+	put(and_(0, 0));
+	put(and_(0, 1));
+	put(and_(1, 0));
+	put(and_(1, 1));
+	
+	put(9999); // Separator.
+	
+	// Not truth table.
+	
+	put(0);
+	put(not 0);
+	
+	put(9999); // Separator.
+	
+	// Nand truth table.
+	
+	put(not (0 and 0));
+	put(not (0 and 1));
+	put(not (1 and 0));
+	put(not (1 and 1));
+	
+	put(9999); // Separator.
+	
+	// Xor truth table.
+	
+	put(xor(0, 0));
+	put(xor(0, 1));
+	put(xor(1, 0));
+	put(xor(1, 1));
+	
+	put(9999); // Separator.
+	
+	// Math expressions
+	a = 3 + 2 * 3 * -(3 + 5 * 3 - (4 + 3 * -( 2 + ( 3 + ( 2 + 1 )))));
+	a = -a;
+	b = 3 * 10 / 2 + 4;
+	c = --(1 + 2 --+--+(4 + 6));	
+	
+	put(a);
+	put(b);
+	put(c);
+	
+
+};
+
+int or_(int a, int b) {
+
+	return(a or b);
+};
+
+
+int and_(int a, int b) {
+	
+	return(a and b);
+};
+
+int nand(int a, int b) {
+	
+	return(not a and b);
+
+};
+
+
+int xor(int a, int b) {
+
+	int r;
+	r = (a or b) and (not (a and b));
+	return(r);
+};

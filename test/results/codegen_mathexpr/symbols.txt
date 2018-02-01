@@ -1,0 +1,42 @@
+================================ global ================================
+program             function            null : (no args)                                  LINK: program       HAS SIZE: true      SIZE: 16            ADDR: 0             
+or_                 function            int : int,int                                     LINK: or_           HAS SIZE: true      SIZE: 8             ADDR: 0             
+and_                function            int : int,int                                     LINK: and_          HAS SIZE: true      SIZE: 8             ADDR: 0             
+nand                function            int : int,int                                     LINK: nand          HAS SIZE: true      SIZE: 8             ADDR: 0             
+xor                 function            int : int,int                                     LINK: xor           HAS SIZE: true      SIZE: 12            ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ program ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+c                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 8             
+d                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 12            
+------------------------------------------------------------------
+
+
+================================ or_ ================================
+a                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+------------------------------------------------------------------
+
+
+================================ and_ ================================
+a                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+------------------------------------------------------------------
+
+
+================================ nand ================================
+a                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+------------------------------------------------------------------
+
+
+================================ xor ================================
+a                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+r                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 8             
+------------------------------------------------------------------
+
+

@@ -1,0 +1,4 @@
+Semantic error: (17,9) Array dimension too small. Expected 3, got 2.
+Semantic error: (20,9) Array dimension too big. Expected 3, got 4.
+Semantic error: (23,9) Array dimension too small. Expected 4, got 3.
+Semantic error: (29,9) Array dimension too big. Expected 4, got 6.

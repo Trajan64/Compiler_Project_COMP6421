@@ -1,0 +1,18 @@
+================================ global ================================
+A                   class                                                                 LINK: A             HAS SIZE: true      SIZE: 0             
+program             function            null : (no args)                                  LINK: program       HAS SIZE: true      SIZE: 100           ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ A ================================
+------------------------------------------------------------------
+
+
+================================ program ================================
+a                   variable            int[2][3][4]                                                          HAS SIZE: true      SIZE: 96            ADDR: 0             
+b                   variable            A[1][2][3][4]                                                         HAS SIZE: true      SIZE: 0             ADDR: 96            
+c                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 96            
+d                   variable            A                                                                     HAS SIZE: true      SIZE: 0             ADDR: 100           
+------------------------------------------------------------------
+
+

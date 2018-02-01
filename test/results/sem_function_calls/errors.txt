@@ -1,0 +1,11 @@
+Semantic error: (5,16) Expected ['int'] in expression, got 'float' instead.
+Semantic error: (19,9) Expected ['int'] in expression, got function returning 'B' instead.
+Semantic error: (20,9) Not enough arguments passed for function free_func. Expected 3 arguments; got 1 arguments.
+Semantic error: (23,9) Too many arguments passed for function free_func. Expected 3 arguments; got 4 arguments.
+Semantic error: (26,25) Expected ['float'] in expression, got 'int' instead.
+Semantic error: (27,19) Expected ['int'] in expression, got 'B' instead.
+Semantic error: (27,22) Expected ['B'] in expression, got 'int' instead.
+Semantic error: (36,9) Too many arguments passed for function f. Expected 0 arguments; got 1 arguments.
+Semantic error: (39,19) Array dimension too small. Expected 2, got 1.
+Semantic error: (40,22) Array dimension too small. Expected 2, got 1.
+Semantic error: (51,12) Expected ['B'] in expression, got 'int' instead.

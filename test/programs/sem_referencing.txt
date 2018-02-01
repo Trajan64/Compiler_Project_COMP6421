@@ -1,0 +1,88 @@
+class myClass_1 {
+
+	float a;
+
+	int a(int x, int y) {
+		
+		int b;
+		myClass_2 c[2];
+		myClass_2 d;
+		
+		// error: assigning int to float.
+		a = 5;
+		
+		b = 2;
+		
+		// Error dimension level.
+		c[0][0] = 4;
+		
+		// Should be fine.
+		d = c[0];
+		
+		// Error, variables with object types can only take one object in expression.
+		d = 4;
+		// Same with operators and multiple objects in the expression, they are not allowed in this case.
+		d = c[0] - c[0];
+		d = - c[0];
+		
+		// Deeply nested.
+		c[0] = d.g.h.a;
+		c[0] = d.g.h.f(x);
+		a = d.g.m[0][0].f(x);
+		// Idnest contains an undefined attribute.
+		c[0] = d.g.undefinedAttribute.a;
+		// Too many dimensions
+		c[0] = d.g.m[0][0][0].f(x);
+		c[0] = d.g.h.a[0];
+		// Attribute at the end is not defined.
+		c[0] = d.g.m.undefinedAttribute;
+		// Member function at the end is not defined.
+		c[0] = d.g.m.undefinedFunc();
+		// Error free.
+		c[0] = c[1].g.h;
+		
+		// Error in the idnesting. The semantic analyzer knows we are trying to access functions but the attributes 'abc' are integers.
+		a = 5 + func_1() + b + d.g.abc.test() + d.abc.test();
+		// Undefined.
+		a = func_2();
+	
+	};
+
+
+};
+
+class myClass_2 {
+
+	myClass_3 g;
+	int abc;
+
+};
+
+class myClass_3 {
+
+	myClass_4 h;
+	myClass_4 m[3][5];
+	int abc;
+	
+};
+
+
+class myClass_4 {
+
+	int a;
+	float f(int a) {
+	
+		return(a);
+		
+	};
+
+};
+
+
+program {
+
+};
+
+int func_1() {
+
+};

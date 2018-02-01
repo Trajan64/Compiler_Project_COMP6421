@@ -1,0 +1,58 @@
+================================ global ================================
+D                   class                                                                 LINK: D             HAS SIZE: true      SIZE: 12            
+C                   class                                                                 LINK: C             HAS SIZE: true      SIZE: 24            
+B                   class                                                                 LINK: B             HAS SIZE: true      SIZE: 196           
+A                   class                                                                 LINK: A             HAS SIZE: true      SIZE: 204           
+program             function            null : (no args)                                  LINK: program       HAS SIZE: true      SIZE: 240           ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ D ================================
+a                   variable            int[2]                                                                HAS SIZE: true      SIZE: 8             ADDR: 0             
+b                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 8             
+------------------------------------------------------------------
+
+
+================================ C ================================
+g                   variable            D[2]                                                                  HAS SIZE: true      SIZE: 24            ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ B ================================
+a                   variable            C[2][4]                                                               HAS SIZE: true      SIZE: 192           ADDR: 0             
+b                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 192           
+------------------------------------------------------------------
+
+
+================================ A ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   variable            float                                                                 HAS SIZE: true      SIZE: 4             ADDR: 4             
+c                   variable            B                                                                     HAS SIZE: true      SIZE: 196           ADDR: 8             
+int_meth            function            int : (no args)                                   LINK: A:int_meth    HAS SIZE: true      SIZE: 0             ADDR: 0             
+float_meth          function            float : (no args)                                 LINK: A:float_meth  HAS SIZE: true      SIZE: 0             ADDR: 0             
+obj_meth            function            A : (no args)                                     LINK: A:obj_meth    HAS SIZE: true      SIZE: 204           ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ A:int_meth ================================
+------------------------------------------------------------------
+
+
+================================ A:float_meth ================================
+------------------------------------------------------------------
+
+
+================================ A:obj_meth ================================
+a                   variable            A                                                                     HAS SIZE: true      SIZE: 204           ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ program ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+c                   variable            float                                                                 HAS SIZE: true      SIZE: 4             ADDR: 8             
+d                   variable            A                                                                     HAS SIZE: true      SIZE: 204           ADDR: 12            
+e                   variable            int[2][3]                                                             HAS SIZE: true      SIZE: 24            ADDR: 216           
+------------------------------------------------------------------
+
+

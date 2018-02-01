@@ -1,0 +1,17 @@
+
+
+
+program {
+
+	int a;
+	float b;
+	a = a + b;
+
+};
+
+
+undefinedClass fun() {
+	
+	undefinedClass a;
+	return (a);
+};

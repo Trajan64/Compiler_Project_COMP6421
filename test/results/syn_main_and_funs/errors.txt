@@ -1,0 +1,2 @@
+Syntax error: (11,1) expected ['float', id, 'int'] got 'class' instead.
+Syntax error: (11,9) expected [id] got '{' instead.

@@ -1,0 +1,43 @@
+================================ global ================================
+B                   class                                                                 LINK: B             HAS SIZE: true      SIZE: 4             
+A                   class                                                                 LINK: A             HAS SIZE: true      SIZE: 12            
+program             function            null : (no args)                                  LINK: program       HAS SIZE: true      SIZE: 52            ADDR: 0             
+fun1                function            int : (no args)                                   LINK: fun1          HAS SIZE: true      SIZE: 0             ADDR: 0             
+fun2                function            int : int                                         LINK: fun2          HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ B ================================
+g                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ A ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   variable            B[2]                                                                  HAS SIZE: true      SIZE: 8             ADDR: 4             
+meth                function            int : int                                         LINK: A:meth        HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ A:meth ================================
+i                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ program ================================
+r                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+a                   variable            int[2][4]                                                             HAS SIZE: true      SIZE: 32            ADDR: 4             
+m                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 36            
+b                   variable            A                                                                     HAS SIZE: true      SIZE: 12            ADDR: 40            
+------------------------------------------------------------------
+
+
+================================ fun1 ================================
+------------------------------------------------------------------
+
+
+================================ fun2 ================================
+a                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+

@@ -1,0 +1,19 @@
+Semantic error: (12,13) Expected ['float'] in expression, got 'int' instead.
+Semantic error: (17,9) Array dimension too big. Expected 1, got 2.
+Semantic error: (23,13) Expected ['myClass_2'] in expression, got 'int' instead.
+Semantic error: (25,18) Operator '-' is undefined in expression for expected type ['myClass_2'].
+Semantic error: (26,13) Operator '-' is undefined in expression for expected type ['myClass_2'].
+Semantic error: (29,16) Expected ['myClass_2'] in expression, got 'int' instead.
+Semantic error: (30,16) Expected ['myClass_2'] in expression, got function returning 'float' instead.
+Semantic error: (33,20) Could not find attribute undefinedAttribute within class myClass_3
+Semantic error: (35,20) Array dimension too big. Expected 2, got 3.
+Semantic error: (36,22) Index specified but identifier is not an array.
+Semantic error: (38,20) Array dimension too small. Expected 2, got 0.
+Semantic error: (40,20) Array dimension too small. Expected 2, got 0.
+Semantic error: (45,13) Expected ['float'] in expression, got 'int' instead.
+Semantic error: (45,17) Expected ['float'] in expression, got function returning 'int' instead.
+Semantic error: (45,28) Expected ['float'] in expression, got 'int' instead.
+Semantic error: (45,36) Attribute 'abc' found within but class type was expected (got 'int' instead.)
+Semantic error: (45,51) Attribute 'abc' found within but class type was expected (got 'int' instead.)
+Semantic error: (47,13) Function func_2 not found.
+Semantic error: (75,16) Expected ['float'] in expression, got 'int' instead.

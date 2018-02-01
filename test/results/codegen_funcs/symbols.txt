@@ -1,0 +1,52 @@
+================================ global ================================
+A                   class                                                                 LINK: A             HAS SIZE: true      SIZE: 4             
+program             function            null : (no args)                                  LINK: program       HAS SIZE: true      SIZE: 16            ADDR: 0             
+fun1                function            int : int,int                                     LINK: fun1          HAS SIZE: true      SIZE: 12            ADDR: 0             
+fun2                function            int : int                                         LINK: fun2          HAS SIZE: true      SIZE: 4             ADDR: 0             
+fun3                function            int : int                                         LINK: fun3          HAS SIZE: true      SIZE: 4             ADDR: 0             
+fun4                function            A : (no args)                                     LINK: fun4          HAS SIZE: true      SIZE: 8             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ A ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+meth1               function            int : int                                         LINK: A:meth1       HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ A:meth1 ================================
+b                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ program ================================
+b                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+c                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+d                   variable            A                                                                     HAS SIZE: true      SIZE: 4             ADDR: 8             
+r                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 12            
+------------------------------------------------------------------
+
+
+================================ fun1 ================================
+a                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+c                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 8             
+------------------------------------------------------------------
+
+
+================================ fun2 ================================
+a                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ fun3 ================================
+a                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ fun4 ================================
+a                   variable            A                                                                     HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+------------------------------------------------------------------
+
+

@@ -1,0 +1,2 @@
+Lexical error: (16,9) badly formed float; expected digit after '.' got '.' instead
+Syntax error: (16,13) expected ['*', '/', 'and'] got float instead.

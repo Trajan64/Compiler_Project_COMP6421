@@ -1,0 +1,3 @@
+Semantic error: (8,13) Expected ['int'] in expression, got 'float' instead.
+Semantic error: (13,1) Class type 'undefinedClass' does not exist
+Semantic error: (15,5) Class type 'undefinedClass' does not exist

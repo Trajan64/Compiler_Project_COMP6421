@@ -1,0 +1,30 @@
+class A {
+	
+};
+
+
+program {
+	
+	int a[2][3][4];
+	A b[1][2][3][4];
+	int c;
+	A d;
+	
+	// Valid.
+	c = a[0][0][1];
+	
+	// Invalid. Too small
+	c = a[0][0];
+	
+	// Invalid. Too big
+	c = a[0][0][0][0];
+	
+	// Invalid. too small
+	d = b[0][0][0];
+	
+	// Valid.
+	d = b[0][0][0][0];
+
+	// Invalid. Too big
+	d = b[0][0][0][0][0][0];
+};

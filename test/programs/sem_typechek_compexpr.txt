@@ -1,0 +1,82 @@
+class D {
+	
+	int a[2];
+	int b;
+
+};
+
+class C {
+
+	D g[2];
+
+};
+
+class B {
+
+	C a[2][4];
+	int b;
+
+};
+
+class A {
+	
+	int a;
+	float b;
+	B c;
+	
+	int int_meth() {
+		return (1);
+	};
+	
+	float float_meth() {
+		return (2.4);
+	};
+	
+	A  obj_meth() {
+		A a;
+		return(a);
+	};
+	
+};
+
+
+program {
+
+	int a;
+	int b;
+	float c;
+	A d;
+	int e[2][3];
+	b = 2;
+	c = 4;
+	a = 3 - b * c + fun() + d.int_meth() - d.float_meth() * d.obj_meth() + e[0] * e[4 + 8 * c + fun()][3.5];
+	put(3 + 4 + 3.4 + d);
+	put(4 / 2 and 4);
+	get(c);
+	get(d);
+	get(a);
+	// Valid
+	a = d.c.a[1][2].g[0].a[0];
+	a = d.c.a[d.c.a[1][2].g[0].a[0]][1 and 0].g[0].a[0];
+	e[0][0] = e[0][2.5];
+	e[0][0] = e[ e[ e[0][1] ] [ 0 ] ] [1];
+	
+	// Invalid
+	e[0][0] = e[ e [ e[0][0][0] ] [0]] [0];
+	
+	// Invalid expression for index
+	a = d.c[.c.a[d.c.a[1][2].g[0].a][1 and 0].g[0].a[0];
+	
+		
+	if (2.3) then else;
+	for (int i = 2.4; 2.4 > 3; i = i + d) { };
+
+};
+
+float fun2() {
+	return(0.7);
+};
+
+int fun() {
+	return(0);
+};

@@ -1,0 +1,17 @@
+program {
+	
+	int a;
+	a = power(2, 4);
+	
+	put(a);
+
+};
+
+
+int power(int num, int n) {
+	
+	if (n == 0) then {
+		return(1);
+	} else { return(num * power(num, n - 1)); };
+
+};

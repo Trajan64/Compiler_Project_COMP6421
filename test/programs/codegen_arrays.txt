@@ -1,0 +1,121 @@
+class D {
+	
+	int a;
+	int b;
+
+};
+
+
+class C {
+	
+	D g[2];
+	
+};
+
+
+class B {
+	
+	C a;
+	
+};
+
+
+class A {
+	
+	B d;
+	int a;
+	int b;
+	int c;
+	
+};
+
+
+
+program {
+
+	int a[2][4][2][3];
+	int iarray_dim1_size;
+	int iarray_dim2_size;
+	int iarray_dim3_size;
+	int iarray_dim4_size;
+	A b[2][4];
+	int c;
+	int A_dim1_size;
+	int A_dim2_size;
+	A_dim1_size = 2;
+	A_dim2_size = 4;
+	
+	iarray_dim1_size = 2;
+	iarray_dim2_size = 4;
+	iarray_dim3_size = 2;
+	iarray_dim4_size = 3;
+	
+	for(int i = 0; i < A_dim1_size; i = i + 1) {
+		for(int j = 0; j < A_dim2_size; j = j + 1) {
+			b[i][j].a = c;
+			b[i][j].b = c * 10;
+			b[i][j].c = c * 100;
+			c = c + 1;
+		};
+	};
+	
+	for(int i = 0; i < A_dim1_size; i = i + 1) {
+		for(int j = 0; j < A_dim2_size; j = j + 1) {
+			put(b[i][j].a);
+			put(b[i][j].b);
+			put(b[i][j].c);
+		};
+	};
+	
+	put(9999); // Separator.
+	put(9999);
+	put(9999);
+	put(9999);
+	put(9999);
+	c = 0;
+	
+	for(int i = 0; i < A_dim1_size; i = i + 1) {
+		for(int j = 0; j < A_dim2_size; j = j + 1) {
+			b[i][j].d.a.g[0].a = c;
+			b[i][j].d.a.g[1].a = c + 1;
+			c = c + 2;
+		};
+	};
+	
+	for(int i = 0; i < A_dim1_size; i = i + 1) {
+		for(int j = 0; j < A_dim2_size; j = j + 1) {
+			put(b[i][j].d.a.g[0].a);
+			put(b[i][j].d.a.g[1].a);
+		};
+	};
+	
+	put(9999); // Separator.
+	put(9999);
+	put(9999);
+	put(9999);
+	put(9999);
+	
+	c = 0;
+	for(int i = 0; i < iarray_dim1_size; i = i + 1) {
+		for(int j = 0; j < iarray_dim2_size; j = j + 1) {
+			for(int k = 0; k < iarray_dim3_size; k = k + 1) {
+				for(int m = 0; m < iarray_dim4_size; m = m + 1) {
+					a[i][j][k][m] = c;
+					c = c + 1;
+				};
+			};
+		};
+	};
+	
+	for(int i = 0; i < iarray_dim1_size; i = i + 1) {
+		for(int j = 0; j < iarray_dim2_size; j = j + 1) {
+			for(int k = 0; k < iarray_dim3_size; k = k + 1) {
+				for(int m = 0; m < iarray_dim4_size; m = m + 1) {
+					put(a[i][j][k][m]);
+				};
+			};
+		};
+	};	
+	
+	
+};

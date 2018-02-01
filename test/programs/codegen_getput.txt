@@ -1,0 +1,21 @@
+program {
+	
+	int a;
+	int b;
+	
+	b = fun();
+	
+	get(a);
+	put(a);
+
+};
+
+int fun() {
+	
+	int a;
+	int b;
+	int d[2][4][6];
+	a = b + 2;
+	return(a);
+};
+	

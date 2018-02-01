@@ -1,0 +1,50 @@
+================================ global ================================
+A                   class                                                                 LINK: A             HAS SIZE: true      SIZE: 8             
+B                   class                                                                 LINK: B             HAS SIZE: true      SIZE: 12            
+C                   class                                                                 LINK: C             HAS SIZE: true      SIZE: 172           
+program             function            null : (no args)                                  LINK: program       HAS SIZE: true      SIZE: 176           ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ A ================================
+b                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+c                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+meth                function            int : int                                         LINK: A:meth        HAS SIZE: true      SIZE: 4             ADDR: 0             
+meth2               function            int : (no args)                                   LINK: A:meth2       HAS SIZE: true      SIZE: 0             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ A:meth ================================
+b                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ A:meth2 ================================
+------------------------------------------------------------------
+
+
+================================ B ================================
+a                   variable            A                                                                     HAS SIZE: true      SIZE: 8             ADDR: 0             
+b                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 8             
+------------------------------------------------------------------
+
+
+================================ C ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   variable            B[3][4]                                                               HAS SIZE: true      SIZE: 144           ADDR: 4             
+c                   variable            B[2]                                                                  HAS SIZE: true      SIZE: 24            ADDR: 148           
+meth                function            int : int                                         LINK: C:meth        HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ C:meth ================================
+e                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ program ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   variable            C                                                                     HAS SIZE: true      SIZE: 172           ADDR: 4             
+------------------------------------------------------------------
+
+

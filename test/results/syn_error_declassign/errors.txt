@@ -1,0 +1,1 @@
+Syntax error: (4,11) expected ['['] got '=' instead.

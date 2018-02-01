@@ -1,0 +1,5 @@
+Semantic error: (8,9) Identifier a not found.
+Semantic error: (11,13) Function meth4 not found.
+Semantic error: (30,5) Class type 'B' does not exist
+Semantic error: (34,11) Method meth2 not found inside A class.
+Semantic error: (46,12) Identifier b not found.

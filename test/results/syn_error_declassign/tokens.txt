@@ -1,0 +1,4 @@
+<(1,1) T_KEYWORD_PROGRAM 'program'> <(1,9) T_DELIMITER_LEFT_BRACKET 'null'> 
+
+
+<(4,5) T_KEYWORD_INT 'int'> <(4,5) T_KEYWORD_INT 'int'> <(4,9) T_IDENTIFIER 'a'> <(4,11) T_DELIMITER_ASSIGN 'null'> <(4,13) T_INTEGER '5'> <(4,14) T_DELIMITER_SEMICOLON 'null'> 

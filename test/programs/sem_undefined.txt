@@ -1,0 +1,48 @@
+class A {
+	
+	int b;
+	
+	int meth() {
+		
+		// Undefined.
+		a = 3;
+		
+		// meth4() not found.
+		b = meth4();
+		return(0);
+	};
+	
+	int meth3() {
+		
+		// b is defined as an attribute.
+		return(b);
+	};
+	
+};
+
+
+program {
+
+	A a;
+	int b;
+	
+	// Class does not exist.
+	B c;
+	
+	b = 4;
+	// Undefined members.
+	b = a.meth2();
+	b = a.b;
+	
+	// Members defined.
+	b = a.b;
+	b = a.meth();
+
+};
+
+
+int func() {
+	
+	return(b);
+};
+

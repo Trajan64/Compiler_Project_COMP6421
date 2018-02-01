@@ -1,0 +1,19 @@
+================================ global ================================
+program             function            null : (no args)                                  LINK: program       HAS SIZE: true      SIZE: 8             ADDR: 0             
+fun                 function            int : (no args)                                   LINK: fun           HAS SIZE: true      SIZE: 200           ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ program ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+------------------------------------------------------------------
+
+
+================================ fun ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+d                   variable            int[2][4][6]                                                          HAS SIZE: true      SIZE: 192           ADDR: 8             
+------------------------------------------------------------------
+
+

@@ -1,0 +1,8 @@
+Semantic error: (8,13) Duplicated parameter declaration 'x'
+Semantic error: (12,15) Duplicated variable declaration 'b'
+Semantic error: (29,9) Duplicated function declaration 'e'
+Semantic error: (34,7) Duplicated class declaration 'myClass_1'
+Semantic error: (38,9) Duplicated function declaration 'a'
+Semantic error: (43,7) Duplicated class declaration 'myClass_1'
+Semantic error: (53,9) Duplicated variable declaration 'a'
+Semantic error: (62,5) Duplicated function declaration 'free_func2'

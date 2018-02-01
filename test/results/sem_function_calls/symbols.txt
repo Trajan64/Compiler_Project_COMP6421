@@ -1,0 +1,36 @@
+================================ global ================================
+B                   class                                                                 LINK: B             HAS SIZE: true      SIZE: 0             
+program             function            null : (no args)                                  LINK: program       HAS SIZE: true      SIZE: 36            ADDR: 0             
+free_func2          function            B : (no args)                                     LINK: free_func2    HAS SIZE: true      SIZE: 0             ADDR: 0             
+free_func           function            int : int,B,float                                 LINK: free_func     HAS SIZE: true      SIZE: 8             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ B ================================
+f                   function            int : (no args)                                   LINK: B:f           HAS SIZE: true      SIZE: 0             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ B:f ================================
+------------------------------------------------------------------
+
+
+================================ program ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   variable            B                                                                     HAS SIZE: true      SIZE: 0             ADDR: 4             
+c                   variable            int[2][4]                                                             HAS SIZE: true      SIZE: 32            ADDR: 4             
+d                   variable            B[2][3]                                                               HAS SIZE: true      SIZE: 0             ADDR: 36            
+------------------------------------------------------------------
+
+
+================================ free_func2 ================================
+------------------------------------------------------------------
+
+
+================================ free_func ================================
+a                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+b                   parameter           B                                                                     HAS SIZE: true      SIZE: 0             ADDR: 4             
+c                   parameter           float                                                                 HAS SIZE: true      SIZE: 4             ADDR: 4             
+------------------------------------------------------------------
+
+

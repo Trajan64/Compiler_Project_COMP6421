@@ -1,0 +1,2 @@
+Lexical error: (3,9) unknown token.
+Syntax error: (3,9) expected [id] got unknown token instead.

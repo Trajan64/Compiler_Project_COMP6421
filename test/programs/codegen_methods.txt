@@ -1,0 +1,51 @@
+class A {
+	
+	int b;
+	int c;
+	
+	int meth(int b) {
+		c = 1;
+		b = c + b + 1;
+		return(b + meth2() + meth2()); // 3 + 1 + 1 = 5
+	};
+	
+	int meth2() {
+		return(b + c); // return 0 + 1
+	};
+
+};
+
+
+class B {
+	
+	A a;
+	int b;
+};
+
+class C {
+
+	int a;
+	B b[3][4];
+	B c[2];
+	
+	int meth(int e) {
+		a = 1 + e;
+		b[0][2].a.c = 1;
+		a = a + b[0][2].a.meth(1); // 2 + b[0][2].a.meth(1);
+		return(a);
+		
+	};
+	
+};
+
+
+program {
+
+	int a;
+	C b;
+	a = b.meth(1);
+	// a should hold 7
+	
+	put(a);
+	
+};

@@ -1,0 +1,48 @@
+class B {
+	
+	int meth() {
+		
+		a = 2;
+		
+		undefinedVar = 3;
+	};
+	
+	int a;
+	
+};
+
+
+class A {
+	
+	B a;
+	
+	int meth1() {
+		
+		int a;
+		a = meth2();
+		return(a);
+	};
+	
+	int meth2() {
+		
+		return(0);
+	};
+	
+};
+
+
+program { };
+
+
+int func_1() {
+	return(0);
+};
+
+
+int func_2() {
+	
+	int a;
+	a = func_1();
+	a = a + undefinedFunc();
+	return(a);
+};

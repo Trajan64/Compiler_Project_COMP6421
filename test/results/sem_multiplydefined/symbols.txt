@@ -1,0 +1,91 @@
+================================ global ================================
+myClass_1           class                                                                 LINK: myClass_1     HAS SIZE: true      SIZE: 4             
+(dup)myClass_1_1    class                                                                 LINK: (dup)myClass_1_1HAS SIZE: true      SIZE: 0             
+(dup)myClass_1_2    class                                                                 LINK: (dup)myClass_1_2HAS SIZE: true      SIZE: 4             
+program             function            null : (no args)                                  LINK: program       HAS SIZE: true      SIZE: 8             ADDR: 0             
+free_func1          function            int : (no args)                                   LINK: free_func1    HAS SIZE: true      SIZE: 0             ADDR: 0             
+free_func2          function            int : (no args)                                   LINK: free_func2    HAS SIZE: true      SIZE: 0             ADDR: 0             
+(dup)free_func2_1   function            int : (no args)                                   LINK: (dup)free_func2_1HAS SIZE: true      SIZE: 0             ADDR: 0             
+y                   function            int : (no args)                                   LINK: y             HAS SIZE: true      SIZE: 0             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ myClass_1 ================================
+c                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+a                   function            int : int,int                                     LINK: myClass_1:a   HAS SIZE: true      SIZE: 24            ADDR: 0             
+y                   function            int : (no args)                                   LINK: myClass_1:y   HAS SIZE: true      SIZE: 0             ADDR: 0             
+c                   function            int : (no args)                                   LINK: myClass_1:c   HAS SIZE: true      SIZE: 0             ADDR: 0             
+e                   function            int : int                                         LINK: myClass_1:e   HAS SIZE: true      SIZE: 4             ADDR: 0             
+(dup)e_1            function            int : float                                       LINK: myClass_1:(dup)e_1HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ myClass_1:a ================================
+x                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+y                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+(dup)x_1            variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 8             
+b                   variable            float                                                                 HAS SIZE: true      SIZE: 4             ADDR: 12            
+(dup)b_1            variable            float                                                                 HAS SIZE: true      SIZE: 4             ADDR: 16            
+c                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 20            
+------------------------------------------------------------------
+
+
+================================ myClass_1:y ================================
+------------------------------------------------------------------
+
+
+================================ myClass_1:c ================================
+------------------------------------------------------------------
+
+
+================================ myClass_1:e ================================
+a                   parameter           int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ myClass_1:(dup)e_1 ================================
+c                   parameter           float                                                                 HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ (dup)myClass_1_1 ================================
+a                   function            float : (no args)                                 LINK: (dup)myClass_1_1:aHAS SIZE: true      SIZE: 0             ADDR: 0             
+(dup)a_1            function            int : (no args)                                   LINK: (dup)myClass_1_1:(dup)a_1HAS SIZE: true      SIZE: 0             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ (dup)myClass_1_1:a ================================
+------------------------------------------------------------------
+
+
+================================ (dup)myClass_1_1:(dup)a_1 ================================
+------------------------------------------------------------------
+
+
+================================ (dup)myClass_1_2 ================================
+c                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+------------------------------------------------------------------
+
+
+================================ program ================================
+a                   variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 0             
+(dup)a_1            variable            int                                                                   HAS SIZE: true      SIZE: 4             ADDR: 4             
+------------------------------------------------------------------
+
+
+================================ free_func1 ================================
+------------------------------------------------------------------
+
+
+================================ free_func2 ================================
+------------------------------------------------------------------
+
+
+================================ (dup)free_func2_1 ================================
+------------------------------------------------------------------
+
+
+================================ y ================================
+------------------------------------------------------------------
+
+

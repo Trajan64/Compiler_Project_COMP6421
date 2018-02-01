@@ -1,0 +1,8 @@
+prog 
+classDecl_N progBody 
+progBody 
+'program' funcBody ';' funcDef_N 
+'program' '{' rule_varDecl_or_statement '}' ';' funcDef_N 
+'program' '{' type_ varDecl_tail varDecl_or_statement '}' ';' funcDef_N 
+'program' '{' 'int' varDecl_tail varDecl_or_statement '}' ';' funcDef_N 
+'program' '{' 'int' id arraySize_N ';' varDecl_or_statement '}' ';' funcDef_N 
